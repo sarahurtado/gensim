@@ -471,7 +471,7 @@ class WordEmbeddingsKeyedVectors(BaseKeyedVectors):
         """
         return super(WordEmbeddingsKeyedVectors, self).closer_than(w1, w2)
 
-    def most_similar(self, positive=None, negative=None, topn=10, restrict_vocab=None, indexer=None):
+    def most_similar(self, positive=None, negative=None, topn=400, restrict_vocab=None, indexer=None):
         """Find the top-N most similar words.
         Positive words contribute positively towards the similarity, negative words negatively.
 
